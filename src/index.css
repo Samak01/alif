@@ -1,0 +1,226 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+header{
+  width: 100%;
+  max-width: 100%;
+  height: 10vh;
+  /* background: #099909; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ header .logo img{
+  object-fit: cover;
+  width: 80px;
+  height: 40px;
+  margin: 10px;
+  cursor: pointer;
+  margin-left: 60px;
+}
+
+ header .contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ .nav ul{
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  user-select: none;
+  margin-right: 70px;
+  transition: 0.9s;
+}
+
+.wrapp header nav .nav ul li{
+  transition: 0.3s;
+}
+
+ .nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+ .nav ul li a:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+  color: #099909;
+}
+
+
+.wrapp header .save {
+  margin: 10px;
+  margin-right: 30px;
+  font-size: 20px;
+  transition: 0.3s;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.wrapp header .save:hover{
+  color: #099909;
+}
+
+.wrapp .main{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow-y: scroll;
+  display: block;
+}
+
+.wrapp .main .contain{
+  padding: 10px;
+}
+
+.wrapp .main .contain h1{
+  text-align: center;
+  margin: 10px;
+  font-size: 24px;
+  
+}
+
+.wrapp .main .contain .cards{
+  gap: 20px;
+}
+
+
+
+.wrapp .main .menu{
+  width: 200px;
+  height: 300px;
+  margin: 20px;
+  float: left;
+}
+
+.wrapp .main .container::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #099909;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+  opacity: 0.5;
+  }
+
+.wrapp .main .container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.wrapp .main .container:hover{
+  transform: scale(1.03);
+  box-shadow: 0 0 5px 2px;
+}
+
+.posts .menu .container .post{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.posts .menu .container .post .info{
+  padding: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.posts .menu .container .post .info h2{
+  margin: 10px;
+  font-size: 18px;
+}
+
+.posts .menu .container .post .info p{
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.container button{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.container button:hover{
+  background: #099909;
+  cursor: pointer;
+}
+
+.contacts{
+  margin: 20px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contacts h1{
+  text-align: center;
+  margin: 20px;
+  font-size: 28px;
+}
+
+.contacts p{
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.contacts img{
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-size: 20px;
+}
